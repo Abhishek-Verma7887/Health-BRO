@@ -109,6 +109,7 @@ public class AddNewDoctor extends AppCompatActivity {
 
                 if(main_uri != null && !TextUtils.isEmpty(doctorAddress) && !TextUtils.isEmpty(doctorName) && !TextUtils.isEmpty(doctorSpeciality)&& !TextUtils.isEmpty(doctorContact)){
                     progressBar.setVisibility(View.VISIBLE);
+                    AddBtn.setEnabled(false);
 
                     File imageFile = new File(main_uri.getPath());
 
@@ -146,6 +147,7 @@ public class AddNewDoctor extends AppCompatActivity {
                                 Toast.makeText(AddNewDoctor.this, " Image Error" + error, Toast.LENGTH_LONG).show();
                             }
                             progressBar.setVisibility(View.INVISIBLE);
+                            AddBtn.setEnabled(true);
 
                         }
                     });
@@ -154,6 +156,7 @@ public class AddNewDoctor extends AppCompatActivity {
                 else {
                     Toast.makeText(AddNewDoctor.this, "No image", Toast.LENGTH_LONG).show();
                     progressBar.setVisibility(View.INVISIBLE);
+                    AddBtn.setEnabled(true);
                 }
 
             }

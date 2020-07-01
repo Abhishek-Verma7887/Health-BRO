@@ -99,6 +99,7 @@ public class NewPost extends AppCompatActivity {
                 postText = newPostText.getText().toString();
                 postTopic =newPostTopic.getText().toString();
                 progressBar.setVisibility(View.VISIBLE);
+                submitBtn.setEnabled(false);
                 if(main_uri != null && !TextUtils.isEmpty(postText) && !TextUtils.isEmpty(postTopic)){
 //                    final String timestamp = FieldValue.serverTimestamp().toString();
 
@@ -185,6 +186,7 @@ public class NewPost extends AppCompatActivity {
                                                 public void onComplete(@NonNull Task<DocumentReference> task) {
                                                     if (task.isSuccessful()) {
                                                         progressBar.setVisibility(View.INVISIBLE);
+                                                        submitBtn.setEnabled(true);
 
                                                         Toast.makeText(NewPost.this, "Successfully Posted", Toast.LENGTH_LONG).show();
                                                         Toast.makeText(NewPost.this, thumbUri[0], Toast.LENGTH_LONG).show();
@@ -194,6 +196,7 @@ public class NewPost extends AppCompatActivity {
                                                     } else {
                                                         Toast.makeText(NewPost.this, "Error" + task.getException().toString(), Toast.LENGTH_LONG).show();
                                                         progressBar.setVisibility(View.INVISIBLE);
+                                                        submitBtn.setEnabled(true);
                                                     }
                                                 }
                                             });
@@ -203,6 +206,7 @@ public class NewPost extends AppCompatActivity {
                                         else {
                                             Toast.makeText(NewPost.this, "Error" + task.getException().toString(), Toast.LENGTH_LONG).show();
                                             progressBar.setVisibility(View.INVISIBLE);
+                                            submitBtn.setEnabled(true);
                                         }
                                     }
                                 });

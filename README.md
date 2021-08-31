@@ -21,7 +21,7 @@ The "google-services.json" file is modified and project info is removed for secu
 
 |                 Adding new post                 |                 pic editing                       |                    Doctors list                 |
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
-| <img width="1604" src="./pics/A.jpeg"> | <img width="1604" src="../pics/B.jpeg"> | <img width="1604" src="./pics/C.jpeg"> |
+| <img width="1604" src="./pics/A.jpeg"> | <img width="1604" src="./pics/B.jpeg"> | <img width="1604" src="./pics/C.jpeg"> |
 
 
 

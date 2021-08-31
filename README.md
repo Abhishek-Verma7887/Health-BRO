@@ -21,13 +21,13 @@ The "google-services.json" file is modified and project info is removed for secu
 
 |                 Adding new post                 |                 pic editing                       |                    Doctors list                 |
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
-| <img width="1604" src="./pics/A.jpg"> | <img width="1604" src="../pics/B.jpg"> | <img width="1604" src="./pics/C.jpg"> |
+| <img width="1604" src="./pics/A.jpeg"> | <img width="1604" src="../pics/B.jpeg"> | <img width="1604" src="./pics/C.jpeg"> |
 
 
 
 |                 Account Setup                 |                 Sign IN                      |                    Homepage                 |
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
-| <img width="1604" src="./pics/D.jpg"> | <img width="1604" src="./pics/E.jpg"> | <img width="1604" src="./pics/F.jpg"> |
+| <img width="1604" src="./pics/D.jpeg"> | <img width="1604" src="./pics/E.jpeg"> | <img width="1604" src="./pics/F.jpeg"> |
 
 
  
